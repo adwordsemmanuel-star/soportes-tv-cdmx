@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soportes TV CDMX - Instalación Incluida el Mismo Día</title>
+  <meta name="description" content="Venta e instalación de soportes para TV en CDMX y Área Metropolitana. Soportes fijos, con movimiento articulado y de techo. Instalación profesional el mismo día, 2 años de garantía.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/soportes-tv.jpeg.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            accent: {
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            whatsapp: '#25D366'
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    .badge-check {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 50%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Top bar info -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Instalación disponible HOY en CDMX
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="inline-flex items-center gap-1">
+          <i class="ph ph-map-pin text-brand-500"></i> Buentono 325, Col. Industrial, G.A.M. CDMX
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="inline-flex items-center gap-1">
+          <i class="ph ph-calendar text-brand-500"></i> Lunes a Domingo
+        </span>
+      </div>
+      <div class="flex items-center gap-4 font-semibold text-white">
+        <a href="tel:5510041679" class="hover:text-brand-400 transition inline-flex items-center gap-1">
+          <i class="ph-bold ph-phone"></i> 55 1004 1679
+        </a>
+        <a href="tel:5518220777" class="hover:text-brand-400 transition inline-flex items-center gap-1">
+          <i class="ph-bold ph-phone"></i> 55 1822 0777
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2.5 sm:gap-3 shrink-0">
+        <img src="images/soportes-tv.jpeg.png" alt="Soportes TV Logo" class="h-10 sm:h-12 w-auto object-contain">
+        <div>
+          <span class="block text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 leading-none">
+            SOPORTES <span class="text-brand-600">TV</span>
+          </span>
+          <span class="hidden sm:block text-[11px] font-semibold text-slate-500 uppercase tracking-wider">CDMX & Área Metropolitana</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#catalogo" class="hover:text-brand-600 transition">Catálogo</a>
+        <a href="#fijos" class="hover:text-brand-600 transition">Fijos / Inclinación</a>
+        <a href="#movimiento" class="hover:text-brand-600 transition">Brazo Articulado</a>
+        <a href="#techo" class="hover:text-brand-600 transition">Techo</a>
+        <a href="#garantia" class="hover:text-brand-600 transition">Garantía</a>
+      </nav>
+
+      <!-- CTA Nav -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20un%20soporte%20con%20instalación%20para%20mi%20pantalla" 
+           target="_blank"
+           aria-label="Contactar por WhatsApp"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white p-2.5 sm:px-4 sm:py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-500/20 transition-all hover:scale-[1.02]">
+          <i class="ph-bold ph-whatsapp-logo text-xl sm:text-lg"></i>
+          <span class="hidden sm:inline">Cotizar por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 gradient-hero border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copy -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6">
+            <i class="ph-fill ph-shield-check text-blue-600 text-base"></i>
+            Más de 15 años de experiencia y 3,500+ instalaciones seguras
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15] mb-6">
+            Soportes para TV <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-accent-500">
+              con Instalación Incluida
+            </span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+            Instalamos el <strong>mismo día de tu compra</strong> en cualquier tipo de muro (concreto, tabique o tablaroca) o losa de techo. 
+            Calidad en acero de alta resistencia y <span class="text-slate-900 font-bold underline decoration-brand-500 decoration-2">2 años de garantía total</span>.
+          </p>
+
+          <!-- Action buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+            <a href="https://wa.me/525510041679?text=Hola,%20solicito%20instalación%20para%20hoy" 
+               target="_blank"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg shadow-brand-600/30 transition transform hover:-translate-y-0.5">
+              <i class="ph-bold ph-calendar-check text-xl"></i>
+              Agendar Instalación Hoy
+            </a>
+            <a href="#catalogo" 
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-bold text-base px-7 py-4 rounded-xl border border-slate-300 shadow-xs transition">
+              <i class="ph-bold ph-squares-four text-lg"></i>
+              Ver Catálogo y Precios
+            </a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200">
+            <div class="flex items-center gap-2.5 text-left">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-check text-base"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-700 leading-tight">Instalación sin costo extra</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-left">
+              <div class="w-8 h-8 rounded-lg bg-blue-100 text-brand-600 flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-certificate text-base"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-700 leading-tight">2 Años de Garantía Escrita</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-left col-span-2 sm:col-span-1">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                <i class="ph-bold ph-wall text-base"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-700 leading-tight">Tablaroca y Concreto</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-600 to-accent-500 rounded-3xl blur-xl opacity-20"></div>
+            
+            <!-- Main visual card -->
+            <div class="relative bg-white rounded-3xl p-6 shadow-2xl border border-slate-100">
+              <div class="relative rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 mb-6 group">
+                <img src="images/imagenIndexnueva.jpg" alt="Soporte instalado en pared" class="w-full h-72 object-contain bg-white p-2 transition duration-500 group-hover:scale-105">
+                <div class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-lg shadow-md uppercase tracking-wider">
+                  ¡El más vendido!
+                </div>
+              </div>
+
+              <!-- Quick stats inside card -->
+              <div class="space-y-3">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-500 font-medium">Compatibilidad:</span>
+                  <span class="text-slate-900 font-bold">Pantallas de 14" hasta 80"</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-500 font-medium">Tornillería & Taquetes:</span>
+                  <span class="text-slate-900 font-bold">Grado seguridad incluido</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-slate-500 font-medium">Cobertura:</span>
+                  <span class="text-emerald-600 font-bold">Toda la CDMX y Área Metropolitana</span>
+                </div>
+              </div>
+
+              <!-- Promo banner accessory -->
+              <div class="mt-6 p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 font-extrabold text-base">
+                  + $150
+                </div>
+                <div class="text-xs text-amber-900">
+                  <span class="font-bold block text-sm">¿Tienes decodificador o DVD?</span>
+                  En la compra de tu soporte para TV, te instalamos la repisa auxiliar por solo $150 MXN.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Anchors / Filter Tabs -->
+  <section class="sticky top-20 z-30 bg-slate-100/90 backdrop-blur-md py-4 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-center gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
+        <a href="#fijos" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-800 border border-slate-300 shadow-xs hover:border-brand-500 hover:text-brand-600 transition shrink-0">
+          🔩 1. Fijos con Inclinación (14" a 80")
+        </a>
+        <a href="#movimiento" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-800 border border-slate-300 shadow-xs hover:border-brand-500 hover:text-brand-600 transition shrink-0">
+          🦾 2. Brazo Articulado (Movimiento)
+        </a>
+        <a href="#techo" class="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-800 border border-slate-300 shadow-xs hover:border-brand-500 hover:text-brand-600 transition shrink-0">
+          🏗️ 3. Techo / Losa
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog -->
+  <div id="catalogo" class="py-16 space-y-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- ================= CATEGORY 1: FIJOS CON INCLINACIÓN ================= -->
+    <section id="fijos" class="scroll-mt-36">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-brand-600 font-extrabold text-xs uppercase tracking-widest">Línea Residencial y Comercial</span>
+          <h2 class="text-3xl font-black text-slate-900 tracking-tight">Soportes Fijos con Inclinación a Pared</h2>
+          <p class="text-sm text-slate-600 mt-1">Aptos para cualquier tipo de muro: ladrillo, concreto o <strong class="text-slate-800">tablaroca incluida</strong>.</p>
+        </div>
+        <div class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 font-bold self-start md:self-auto">
+          ✓ Instalación GRATIS incluida
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-brand-300 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-5">
+            <div class="h-44 rounded-xl bg-slate-50 flex items-center justify-center p-2 mb-4 border border-slate-100 overflow-hidden">
+              <img src="images/mao2m2.jpg" alt="Soporte fijo 14 a 24 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-md">14" hasta 24"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 20 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte Compacto</h3>
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Lámina acero al carbón Cal. 12</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Tornillería con tuerca de seguridad</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Colores: Negro, Gris</li>
+            </ul>
+          </div>
+          <div class="p-5 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-3">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$740</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20Fijo%2014-24%20pulgadas%20($740)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-brand-300 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-5">
+            <div class="h-44 rounded-xl bg-slate-50 flex items-center justify-center p-2 mb-4 border border-slate-100 overflow-hidden">
+              <img src="images/Tl01m2.jpg" alt="Soporte fijo 22 a 36 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-md">22" hasta 36"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 40 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte Mediano</h3>
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación ajustable de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Ajuste horizontal y vertical</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Barras de deslizamiento</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Color: Negro</li>
+            </ul>
+          </div>
+          <div class="p-5 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-3">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$890</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20Fijo%2022-36%20pulgadas%20($890)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl border-2 border-brand-500 shadow-md hover:shadow-xl transition-all flex flex-col justify-between overflow-hidden group relative">
+          <div class="bg-brand-600 text-white text-[10px] font-extrabold uppercase py-1 text-center tracking-wider">
+            Recomendado / Estándar
+          </div>
+          <div class="p-5">
+            <div class="h-44 rounded-xl bg-slate-50 flex items-center justify-center p-2 mb-4 border border-slate-100 overflow-hidden">
+              <img src="images/TL-02m2.jpg" alt="Soporte fijo 37 a 52 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-md">37" hasta 52"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 50 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte Pantalla Grande</h3>
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación ajustable de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Ajuste horizontal y vertical</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Placa ancha para reparto de carga</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Color: Negro</li>
+            </ul>
+          </div>
+          <div class="p-5 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-3">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-brand-600">$1,090</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20Fijo%2037-52%20pulgadas%20($1090)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-brand-500/20 transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-brand-300 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-5">
+            <div class="h-44 rounded-xl bg-slate-50 flex items-center justify-center p-2 mb-4 border border-slate-100 overflow-hidden">
+              <img src="images/TL_03m2.jpg" alt="Soporte fijo 53 a 80 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-md">53" hasta 80"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 65 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte Extra Grande</h3>
+            <ul class="text-xs text-slate-600 space-y-1.5 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación ajustable de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Máxima capacidad para TVs grandes</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Barras reforzadas antideslizamiento</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Color: Negro</li>
+            </ul>
+          </div>
+          <div class="p-5 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-3">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$1,450</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20Fijo%2053-80%20pulgadas%20($1450)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CATEGORY 2: BRAZO ARTICULADO CON MOVIMIENTO ================= -->
+    <section id="movimiento" class="scroll-mt-36">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-accent-500 font-extrabold text-xs uppercase tracking-widest">Máxima Flexibilidad y Visión</span>
+          <h2 class="text-3xl font-black text-slate-900 tracking-tight">Soportes con Brazo Articulado y Movimiento</h2>
+          <p class="text-sm text-slate-600 mt-1">Giro de hasta 180° e inclinación. Nota: Instalación recomendada en muro sólido (tabique, block o concreto).</p>
+        </div>
+        <div class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 font-bold self-start md:self-auto">
+          ✓ Instalación GRATIS incluida
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Mov 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-accent-500 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-6">
+            <div class="h-48 rounded-xl bg-slate-50 flex items-center justify-center p-3 mb-5 border border-slate-100 overflow-hidden">
+              <img src="images/brazoch.jpg" alt="Brazo articulado 14 a 24 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-accent-600 bg-orange-50 px-2.5 py-1 rounded-md">14" hasta 24"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 12 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Brazo Articulado Individual</h3>
+            <ul class="text-xs text-slate-600 space-y-2 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Movimiento de brazo hasta 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Cabeza con giro de hasta 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 10°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Lámina acero al carbón Cal. 12</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-4">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$1,150</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20con%20Brazo%20Articulado%2014-24%20pulgadas%20($1150)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Mov 2 -->
+        <div class="bg-white rounded-2xl border-2 border-accent-500 shadow-md hover:shadow-xl transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="bg-accent-500 text-white text-[10px] font-extrabold uppercase py-1 text-center tracking-wider">
+            Popular para Recámaras
+          </div>
+          <div class="p-6">
+            <div class="h-48 rounded-xl bg-slate-50 flex items-center justify-center p-3 mb-5 border border-slate-100 overflow-hidden">
+              <img src="images/brazoch.jpg" alt="Brazo articulado 2 segmentos 22 a 36 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-accent-600 bg-orange-50 px-2.5 py-1 rounded-md">22" hasta 36" (hasta 42" slim)</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 20 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Brazo de 2 Segmentos</h3>
+            <ul class="text-xs text-slate-600 space-y-2 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Brazo articulado en 2 segmentos</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Giro radial completo de hasta 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 10° y posición ajustable</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Pintura horneada color negro</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-4">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-accent-600">$1,450</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20con%20Brazo%202%20Segmentos%2022-36%20pulgadas%20($1450)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-bold text-xs py-3 px-4 rounded-xl shadow-md shadow-orange-500/20 transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Mov 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-accent-500 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-6">
+            <div class="h-48 rounded-xl bg-slate-50 flex items-center justify-center p-3 mb-5 border border-slate-100 overflow-hidden">
+              <img src="images/banner.jpg" alt="Doble brazo articulado 37 a 72 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-accent-600 bg-orange-50 px-2.5 py-1 rounded-md">37" hasta 72"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 36 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Doble Brazo Heavy-Duty</h3>
+            <ul class="text-xs text-slate-600 space-y-2 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Doble-brazo para soporte equilibrado</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-accent-500"></i> Cabeza con giro hasta 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Charola de montaje ajustable</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 10°</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-4">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$1,800</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20Doble%20Brazo%2037-72%20pulgadas%20($1800)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CATEGORY 3: SOPORTES DE TECHO ================= -->
+    <section id="techo" class="scroll-mt-36">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-purple-600 font-extrabold text-xs uppercase tracking-widest">Ahorro Máximo de Espacio</span>
+          <h2 class="text-3xl font-black text-slate-900 tracking-tight">Soportes Fijos a Techo / Losa</h2>
+          <p class="text-sm text-slate-600 mt-1">Ideales para negocios, restaurantes, salas de espera, comedores y recámaras. Anclaje a losa de concreto.</p>
+        </div>
+        <div class="text-xs bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-200 font-bold self-start md:self-auto">
+          ✓ Instalación GRATIS incluida
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- Techo 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-purple-400 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-6">
+            <div class="h-52 rounded-xl bg-slate-50 flex items-center justify-center p-3 mb-5 border border-slate-100 overflow-hidden">
+              <img src="images/MAT2.jpg" alt="Soporte techo 14 a 32 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md">14" hasta 32"</span>
+              <span class="text-xs text-slate-400 font-medium">Hasta 25 Kg</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte a Techo Compacto</h3>
+            <ul class="text-xs text-slate-600 space-y-2 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-purple-500"></i> Giro radial de 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Poste de tire de 9" de longitud</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Tubo mecánico cédula 30 con tuerca de seguridad</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Colores: Negro, Gris</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-4">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$1,250</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20a%20Techo%2014-32%20pulgadas%20($1250)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-purple-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+        <!-- Techo 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-purple-400 transition-all flex flex-col justify-between overflow-hidden group">
+          <div class="p-6">
+            <div class="h-52 rounded-xl bg-slate-50 flex items-center justify-center p-3 mb-5 border border-slate-100 overflow-hidden">
+              <img src="images/ATT023.jpg" alt="Soporte techo ajustable 33 a 65 pulgadas" class="max-h-full max-w-full object-contain group-hover:scale-105 transition duration-300">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md">33" hasta 65"</span>
+              <span class="text-xs text-slate-400 font-medium">Uso Rudo Comercial</span>
+            </div>
+            <h3 class="font-extrabold text-slate-900 text-lg mb-2">Soporte a Techo Telescópico</h3>
+            <ul class="text-xs text-slate-600 space-y-2 mb-4">
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-clockwise text-purple-500"></i> Giro radial de 180°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Inclinación de 15°</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-arrows-down-up text-purple-500"></i> Longitud ajustable (Mín. 20" - Máx. 31")</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Tubo mecánico cédula 30 con tornillería de alta carga</li>
+              <li class="flex items-center gap-1.5"><i class="ph-bold ph-check text-emerald-500"></i> Color: Negro</li>
+            </ul>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="pt-3 border-t border-slate-100 flex items-baseline justify-between mb-4">
+              <span class="text-xs text-slate-400 font-semibold">Precio con instalación:</span>
+              <div class="text-right">
+                <span class="text-2xl font-black text-slate-900">$2,450</span>
+                <span class="text-[10px] text-slate-400 block">+ IVA</span>
+              </div>
+            </div>
+            <a href="https://wa.me/525510041679?text=Hola,%20me%20interesa%20el%20Soporte%20a%20Techo%2033-65%20pulgadas%20($2450)%20con%20instalación" 
+               target="_blank"
+               class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-purple-600 text-white font-bold text-xs py-3 px-4 rounded-xl transition">
+              <i class="ph-bold ph-whatsapp-logo text-base"></i> Pedir con Instalación
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- Why Choose Us / Trust Badges -->
+  <section id="garantia" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-400 font-bold text-xs uppercase tracking-widest">Tranquilidad Total</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2 mb-4">¿Por qué confiar su televisor con nosotros?</h2>
+        <p class="text-slate-400 text-base">Cuidamos su inversión con los más altos estándares de sujeción técnica y experiencia comprobada.</p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+        
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-2xl mb-4">
+            <i class="ph-bold ph-shield-check"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">2 Años de Garantía</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Garantía por escrito tanto en todas las partes mecánicas del soporte como en la mano de obra de fijación.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+            <i class="ph-bold ph-clock"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Servicio el Mismo Día</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Llamas o escribes en la mañana y un técnico especializado te instala tu equipo ese mismo día.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
+            <i class="ph-bold ph-wrench"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Cualquier Pared</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Contamos con taquetes y fijaciones especiales para Tablaroca (panel de yeso), block hueco y concreto sólido.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700/80">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-4">
+            <i class="ph-bold ph-map-pin"></i>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Toda la CDMX</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Cobertura completa y servicio a domicilio en todas las alcaldías de la Ciudad de México y zona conurbada.</p>
+        </div>
+
+      </div>
+
+      <!-- Testimonial / stats banner -->
+      <div class="mt-14 p-8 rounded-3xl bg-gradient-to-r from-brand-900 to-slate-800 border border-brand-500/30 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-2xl sm:text-3xl font-black text-white block">Más de 3,500 pantallas instaladas</span>
+          <span class="text-sm text-brand-200">Cero incidentes registrados en más de 15 años de operación continua.</span>
+        </div>
+        <a href="https://wa.me/525510041679?text=Hola,%20quiero%20cotizar%20la%20instalación%20de%20mi%20pantalla" 
+           target="_blank"
+           class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg transition">
+          <i class="ph-bold ph-whatsapp-logo text-xl"></i>
+          Hablar con un Instalador
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <img src="images/soportes-tv.jpeg.png" alt="Soportes TV" class="h-10 w-auto">
+            <span class="text-lg font-bold text-white">SOPORTES TV</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed mb-4">
+            Especialistas en montaje y fijación segura de pantallas y pantallas LED/OLED/Smart TV a muro o techo.
+          </p>
+          <p class="text-slate-500">
+            Horario: Lunes a Domingo de 8:00 AM a 8:00 PM
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Ubicación y Contacto</h4>
+          <p class="mb-2">📍 Buentono 325, int. 1, Col. Industrial. G.A.M. CP. 07800, CDMX.</p>
+          <p class="mb-2">📞 Tel: <a href="tel:5510041679" class="text-white hover:underline">55 1004 1679</a> / <a href="tel:5518220777" class="text-white hover:underline">55 1822 0777</a></p>
+          <p>💬 WhatsApp directo: <a href="https://wa.me/525510041679" class="text-emerald-400 hover:underline">55 1004 1679</a></p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Información Legal</h4>
+          <p class="text-slate-500 leading-relaxed mb-4">
+            Los precios mostrados corresponden al soporte con servicio de instalación estándar en CDMX. Todos los precios son más I.V.A. en caso de requerir factura.
+          </p>
+          <p class="text-slate-600">
+            © 2026 Soportes TV. Todos los derechos reservados.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Button (Sticky mobile & desktop) -->
+  <aside aria-label="Contacto por WhatsApp" class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group">
+    <div class="hidden sm:block bg-white text-slate-800 text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg border border-slate-200 opacity-90 group-hover:opacity-100 transition">
+      ¿Dudas? Chatea con un técnico 👋
+    </div>
+    <a href="https://wa.me/525510041679?text=Hola,%20estoy%20viendo%20su%20página%20web%20y%20quiero%20cotizar%20un%20soporte%20con%20instalación" 
+       target="_blank"
+       aria-label="Abrir chat de WhatsApp"
+       class="w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300">
+      <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+  </aside>
+
+</body>
+</html>
